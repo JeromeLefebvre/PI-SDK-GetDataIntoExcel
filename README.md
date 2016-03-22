@@ -6,7 +6,7 @@ An example of fetching various types of data using VBA and PI-SDK. Each differen
 * summaries (サマリー)
 
 # Language
-The worksheet is in Japanese and so are the code comments, please submit an issue if you would like to get a translation.
+The worksheet is in Japanese and so are the code comments, please submit an issue if you would like to get request a translation.
 
 # Requirements
 This sample was tested only with:
