@@ -63,6 +63,3 @@ ErrH_Click:
     MsgBox Err.Number & " - " & Err.Description
     Resume Exit_Click
 End Sub
-
-
-

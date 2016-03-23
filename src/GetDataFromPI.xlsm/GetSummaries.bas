@@ -63,21 +63,21 @@ On Error GoTo ErrH_Click
     If valsum.Item(1).IsGood Then
         sourceSheet.Range("B5") = CDbl(valsum.Item(1))
     Else
-        sourceSheet.Range("B5") = "Bag Maximum"
+        sourceSheet.Range("B5") = "Bad Maximum"
     End If
     
     Set valsum = nvsSum("Minimum").value
     If valsum.Item(1).IsGood Then
         sourceSheet.Range("B6") = CDbl(valsum.Item(1))
     Else
-       sourceSheet.Range("B6") = "Bag Minimun"
+       sourceSheet.Range("B6") = "Bad Minimun"
     End If
     
     Set valsum = nvsSum("Average").value
     If valsum.Item(1).IsGood Then
         sourceSheet.Range("B7") = CDbl(valsum.Item(1))
     Else
-        sourceSheet.Range("B7") = "Bag Average"
+        sourceSheet.Range("B7") = "Bad Average"
     End If
     
     ' オブジェクトと接続の処理
@@ -97,7 +97,3 @@ ErrH_Click:
     MsgBox Err.Number & " - " & Err.Description
     Resume Exit_Click
 End Sub
-
-
-
-
