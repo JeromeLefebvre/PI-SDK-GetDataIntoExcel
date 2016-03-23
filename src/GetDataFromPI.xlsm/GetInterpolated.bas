@@ -56,12 +56,12 @@ On Error GoTo ErrH_Click
     
     ' TimeStampとValueを表示する。
     Dim i As Integer
-    i = 7
+    Offset = 7
     Dim piTempValue As piValue
     For Each piTempValue In piArchivedValues
-        sourceSheet.Range("A" + CStr(i)) = piTempValue.timestamp.LocalDate
-        sourceSheet.Range("B" + CStr(i)) = piTempValue.value
-        i = i + 1
+        sourceSheet.Range("A" + CStr(Offset)) = piTempValue.timestamp.LocalDate
+        sourceSheet.Range("B" + CStr(Offset)) = piTempValue.value
+        Offset = Offset + 1
     Next piTempValue
     
     ' オブジェクトと接続の処理
@@ -81,3 +81,5 @@ ErrH_Click:
     MsgBox Err.Number & " - " & Err.Description
     Resume Exit_Click
 End Sub
+
+
